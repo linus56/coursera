@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	
+	font-family: Arial, Helvetica, serif;
+	margin: 0px;
+}
+.bg{
+	background-color: gray;
+	border: 1px solid black;
+	padding: 5px;
+	margin:10px;
+	padding-top: 40px;
+
+ }
+	
+p {
+	position : absolute;
+	right: 0px;
+	top: 0px;
+	border: 1px solid black;
+	margin: 0px;
+	padding: 5px;
+}
+div{
+	margin: 0px;
+	position: relative;
+}
+h1{
+	text-align: center;
+}
+@media (min-width: 992px){
+	.col-ld-4{
+		float: left;
+		width: 33.33%;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+ .col-md-6, .col-md-12{
+ 	float:left;
+ }
+ .col-md-6{
+ 	width:50%;
+ }
+ .col-md-12{
+ 	width:100%;
+ }
+}
+.p1{
+	background-color: pink;
+}
+.p2{
+	background-color: red;
+	color: white;
+}
+.p3{
+	background-color: yellow;
+}
