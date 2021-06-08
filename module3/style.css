@@ -1,0 +1,45 @@
+
+#nav{
+	background-color: dimgrey;
+	border: 2px solid black	;
+}
+.navbar-brand a{
+	text-decoration: none;
+}
+.navbar-brand h1{
+	text-transform: uppercase;
+}
+.bg{
+	background-color: grey;
+	padding: 5px;
+	margin: 0 auto 15px;
+	height: 700px;
+	overflow: hidden;
+}
+.bg h2{
+	text-align: center;
+	
+}
+h1{
+	margin-bottom: 30px;
+}
+.navbar-nav{
+	border: 2px solid white;
+	
+}
+
+.navbar-nav span{
+	vertical-align: center;
+	color: red;
+	font-size: 2em;
+}
+.navbar-nav hr{
+	width: 75%;
+	margin: auto;
+}
+
+#head{
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 15px;
+}
