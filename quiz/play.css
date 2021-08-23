@@ -1,0 +1,67 @@
+
+.container-options{
+    border: 1px solid rgba(85,165,235,0.5); 
+    margin-bottom: 1rem;
+    display: flex;
+    padding:  0px;
+}
+.container-options>p{
+    
+    font-size: 4rem;
+    padding: 0 1rem;
+    
+   
+}
+#no{
+   max-width: 270px;
+    font-size: 3em;
+   
+    margin-bottom: 1rem;
+}
+.choice-pre{
+    background-color: saddlebrown;
+    padding: 1.5rem 2.5 rem;
+}
+.choice-text{
+    padding: 1.5rem 2.5 rem;
+    display: inline;
+    width: 100%;
+}
+.container-options:hover{
+    cursor: pointer;
+    box-shadow: 0 0.6rem 1.6rem 0 rgba(85,165,235,0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.wrong{
+    background-color: red;
+}
+.correct{
+    background-color: green;
+}
+.main-progress{
+    width: 270px;
+    height: 2rem;
+    border: 1px solid rgba(85,165,235,0.5); 
+}
+.progress{
+    height: 2rem;
+    background-color: blue;
+    width: 0;
+}
+.loader{
+    border: 1.6rem solid #f3f3f3;
+    border-top: 1.6rem solid blue;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    animation:  spin 2s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
