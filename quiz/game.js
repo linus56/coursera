@@ -50,11 +50,11 @@ const f=()=>{
     let rand=Math.floor(Math.random()*availablequestioons.length);
     selectedQuestion=availablequestioons[rand];
     //console.log(selectedQuestion.answer);
-    question.innerText=availablequestioons[rand].question;
+    question.innerHTML=availablequestioons[rand].question;
       choices.forEach(choice => {
           const x='choice'+choice.dataset['number'];
          
-            choice.innerText=availablequestioons[rand][x];
+            choice.innerHTML=availablequestioons[rand][x];
       });  
       availablequestioons.splice(rand,1);
       answer=true;
