@@ -39,9 +39,9 @@ binary_sort=(a,value)=>{
     let i=0,j=a.length;
     if(j==0) return -2;
     
-    if(a[0].score>value) return -1;
+    if(a[0].score>=value) return -1;
     if(i==j) return -2;
-    if(a[j-1].score<value) return -2;
+    if(a[j-1].score<=value) return -2;
     while(i<=j){
         let mid=Math.floor((i+j)/2);
         if(a[mid].score<=value&&a[mid+1].score>=value) return mid+1;
