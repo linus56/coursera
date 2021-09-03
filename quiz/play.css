@@ -12,11 +12,14 @@
     
    
 }
+#sel>p{
+    font-size: 4rem;
+}
 #select{
     border: 1px solid royalblue;
     margin-bottom: 1rem;
     font-size: 2rem;
-  
+    max-width: 75%;
     padding: 1rem 0;
     color: rgb(61, 108, 238); ;
     text-align: center;

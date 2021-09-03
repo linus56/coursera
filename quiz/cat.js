@@ -7,7 +7,7 @@ y.value=value.id;
 x.appendChild(y);
 });
 const v=Array.from(x);
-v.forEach(opt=>{
+/*v.forEach(opt=>{
     opt.addEventListener('click',e=>{
         const cl=e.target;
        document.getElementById('sel').classList.add('hidden');
@@ -15,4 +15,11 @@ v.forEach(opt=>{
         console.log(cl.value);
         fe(cl.value);
     })
+})*/
+x.addEventListener('change',e=>{
+    const cl=e.target;
+   document.getElementById('sel').classList.add('hidden');
+   document.getElementById('loader').classList.remove('hidden');
+    console.log(cl.value);
+    fe(cl.value);
 })
