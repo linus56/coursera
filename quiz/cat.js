@@ -16,10 +16,9 @@ const v=Array.from(x);
         fe(cl.value);
     })
 })*/
-x.addEventListener('change',e=>{
-    const cl=e.target;
-   document.getElementById('sel').classList.add('hidden');
-   document.getElementById('loader').classList.remove('hidden');
-    console.log(cl.value);
-    fe(cl.value);
-})
+start=()=>{
+    document.getElementById('sel').classList.add('hidden');
+    document.getElementById('loader').classList.remove('hidden');
+  
+     fe(x.value);
+};
