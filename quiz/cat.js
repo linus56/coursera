@@ -8,10 +8,11 @@ x.appendChild(y);
 });
 const v=Array.from(x);
 v.forEach(opt=>{
-    opt.addEventListener('click',()=>{
+    opt.addEventListener('click',e=>{
+        const cl=e.target;
        document.getElementById('sel').classList.add('hidden');
        document.getElementById('loader').classList.remove('hidden');
-
-        fe(opt.value);
+        console.log(cl.value);
+        fe(cl.value);
     })
 })
