@@ -7,7 +7,8 @@ const question=document.getElementById('question');
     const choices=Array.from(document.getElementsByClassName('choice-text'));
 let answer=false;
 const totalquestions=10;
-fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple")
+function fe(category){
+fetch("https://opentdb.com/api.php?amount=10&category="+category+"&difficulty=easy&type=multiple")
 .then(res=>{
     return res.json();
 })
@@ -30,12 +31,13 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
    );
    f();
    document.getElementById('loader').classList.add('hidden');
+  
    document.getElementById('game').classList.remove('hidden');
 })
     .catch(err=>{
         console.error(err);
     } );
-
+};
 
 const f=()=>{
     if(availablequestioons.length==0&&visitedquestions>=totalquestions) {
@@ -50,11 +52,11 @@ const f=()=>{
     let rand=Math.floor(Math.random()*availablequestioons.length);
     selectedQuestion=availablequestioons[rand];
     //console.log(selectedQuestion.answer);
-    question.innerText=availablequestioons[rand].question;
+    question.innerHTML=availablequestioons[rand].question;
       choices.forEach(choice => {
           const x='choice'+choice.dataset['number'];
          
-            choice.innerText=availablequestioons[rand][x];
+            choice.innerHTML=availablequestioons[rand][x];
       });  
       availablequestioons.splice(rand,1);
       answer=true;

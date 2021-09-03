@@ -17,3 +17,15 @@ td,th{
 th{
     background-color: rebeccapurple;
 }
+.btn1{
+    margin-top: 2rem;
+    display: flex;
+   max-width: 70%; 
+   position: relative;
+   left: 2rem;
+  
+    justify-content: space-between;
+}
+.btn{
+   width: 40%;
+}

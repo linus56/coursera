@@ -12,6 +12,16 @@
     
    
 }
+#select{
+    border: 1px solid royalblue;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  
+    padding: 1rem 0;
+    color: rgb(61, 108, 238); ;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;}
 #no{
    max-width: 270px;
     font-size: 3em;
