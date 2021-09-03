@@ -22,7 +22,7 @@ fetch("https://opentdb.com/api.php?amount=10&category="+category+"&difficulty=ea
        const options=[... eachquestion.incorrect_answers];
        formatquestion.answer=Math.floor(Math.random()*3)+1;
       // console.log(formatquestion.answer)
-       options.splice(formatquestion-1,0,eachquestion.correct_answer);
+       options.splice(formatquestion.answer-1,0,eachquestion.correct_answer);
        options.forEach((choice,index)=>{
             formatquestion["choice"+(index+1)]=choice;
        } );
@@ -56,11 +56,11 @@ const f=()=>{
       choices.forEach(choice => {
           const x='choice'+choice.dataset['number'];
          
-            choice.innerHTML=availablequestioons[rand][x];
+            choice.innerHTML=selectedQuestion[x];
       });  
       availablequestioons.splice(rand,1);
       answer=true;
-      
+      console.log(selectedQuestion.answer);
 };
 choices.forEach(choice=>{
    
