@@ -1,0 +1,46 @@
+body{
+    border:0;
+    margin: 0;
+    background-color: orangered;
+   
+}
+.text-box{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%,-50%);
+    background-color: black;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search{
+    color:#e84118;
+    float: right ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2f3640;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+.search>i{
+    background-color:#fff;
+}
+.text{
+    border:none;
+    background: none;
+    outline: none;
+    line-height: 40px;
+    width: 0;
+    float: left;
+    transition: 0.4s;
+    font-size: 16px;
+    color: white;
+    padding: 0;
+}
+.text-box:hover > .text{
+    width: 240px;
+    padding: 0 6px;
+}

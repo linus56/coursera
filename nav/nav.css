@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    
+    min-height: 100vh;
+    background: #232c33;
+}
+.nav-bar{
+    position: relative;
+    margin-left: 30px;
+    height: 500px;
+    width: 75px;
+    overflow: hidden;
+    background: #2b343b;
+    box-shadow: 10px 0 0 #4187f6;
+    border-left: 2px solid #2b343b;
+    transition: width 0.5s;
+}
+.nav-bar:hover{
+    width:240px
+}
+.nav-bar ul{
+   
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 40px;
+}
+.nav-bar ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.nav-bar ul li.active{
+    background: #4187f6;
+}
+.nav-bar ul li a{
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    color: #fff;
+}
+.nav-bar ul li.active a::before{
+    content:"" ;
+    background:  #2b343b;
+
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    right: 0;
+    top: -30px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #4187f6;
+}
+.nav-bar ul li.active a::after{
+    content:"" ;
+    background:  #2b343b;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #4187f6;
+}
+.nav-bar ul li a .icon,.nav-bar ul li a .title{
+    position: relative;
+ 
+    min-width: 60px;
+    display: block;
+    height: 60px;
+    line-height:70px;
+    text-align: center;
+}
+.nav-bar ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5em;
+}

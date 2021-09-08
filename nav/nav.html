@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <div class="nav-bar">
+       <ul>
+           <li class="list active">
+            <a href="#">
+            <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="title">home</span>
+            </a>
+           </li>
+           <li class="list">
+               <a href="#">
+               <span class="icon">
+                <ion-icon name="person-circle-outline"></ion-icon>
+               </span>
+               <span class="title">
+                   profile
+               </span>
+               </a>
+           </li>
+        
+           <li class="list">
+               <a href="#">
+               <span class="icon">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+               </span>
+               <span class="title">message</span></a>
+           </li>
+           <li class="list"><a href="#">
+               <span class="icon">
+                <ion-icon name="settings-outline"></ion-icon>
+               </span>
+               <span class="title">setting</span></a>
+           </li>
+           <li class="list">
+               <a href="#">
+               <span class="icon">
+                <ion-icon name="help-circle-outline"></ion-icon>
+               </span>
+               <span class="title">help</span>
+               </a>
+           </li>       </ul>
+        
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    const x=document.querySelectorAll('li');
+    f=(x)=>{
+        x.forEach(val=>{
+                val.classList.remove('active');
+            });
+    }
+    x.forEach(value => {
+        value.addEventListener('click',e=>{
+           f(x);
+            value.classList.add('active');
+        })
+    });
+</script>
+</body>
+</html>
